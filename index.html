@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selecciona una opción</title>
 
-  <!-- Fuente Poppins desde Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- Estilo externo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,6 +17,19 @@
       <button onclick="window.open('PDF2.pdf', '_blank')">CODIGOS NEUMAN</button>
       <button onclick="window.open('PDF3.pdf', '_blank')">CODIFICACIÓN BROCAS CORE TECH</button>
     </div>
+
+    <div id="visorPDF" class="visor">
+      <iframe id="iframePDF" src="" frameborder="0"></iframe>
+    </div>
   </main>
+
+  <script>
+    function mostrarPDF(ruta) {
+      const visor = document.getElementById("visorPDF");
+      const iframe = document.getElementById("iframePDF");
+      iframe.src = ruta;
+      visor.style.display = "block";
+    }
+  </script>
 </body>
 </html>

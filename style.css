@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 480px;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Botones */
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  button {
+    padding: 14px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive: botones ocupan el 100% en móviles */
+  @media (max-width: 480px) {
+    button {
+      width: 100%;
+    }
+  }
+  

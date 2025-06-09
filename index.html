@@ -3,25 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selecciona una opción</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Documentos QR</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Fuente Neue Plak local -->
+  <style>
+    @font-face {
+      font-family: 'Neue Plak';
+      src: local('Neue Plak');
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <h1>Codificación de Triconos</h1>
-    <div class="botones">
-      <button onclick="window.open('PDF1.pdf', '_blank')">SANDVIK</button>
-      <button onclick="window.open('PDF2.pdf', '_blank')">NEUMAN</button>
-      <button onclick="window.open('PDF3.pdf', '_blank')">CORE TECH</button>
-    </div>
+  <div class="fondo">
+    <main class="contenedor">
+      <img src="logo_SanMartin.png" alt="Logo San Martin" class="logo" />
 
-    <div id="visorPDF" class="visor">
-      <iframe id="iframePDF" src="" frameborder="0"></iframe>
-    </div>
-  </main>
+      <h1>Selecciona un documento</h1>
+
+      <div class="botones">
+        <button onclick="window.open('SANDVIK.pdf', '_blank')">SANDVIK</button>
+        <button onclick="window.open('NEUMAN.pdf', '_blank')">NEUMAN</button>
+        <button onclick="window.open('CORE_TECH.pdf', '_blank')">CORE TECH</button>
+        <button onclick="window.open('PDB.pdf', '_blank')">PDB</button>
+      </div>
+
+      <div id="visorPDF" class="visor">
+        <iframe id="iframePDF" src="" frameborder="0"></iframe>
+      </div>
+    </main>
+  </div>
 
   <script>
     function mostrarPDF(ruta) {
